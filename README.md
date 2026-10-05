@@ -3,6 +3,10 @@
 Versioned requirements and pure validation functions for store screenshot tooling.
 This package has no runtime dependencies and does not read files or make network requests.
 
+Version 0.1.0 is prepared but has not yet been published to npm. Until publication,
+clone this repository and follow the development steps below. The installation
+command below applies after the first npm release.
+
 ```sh
 npm install @grunersoftware/store-screenshot-specs@0.1.0
 ```
