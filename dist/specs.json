@@ -1,0 +1,542 @@
+{
+  "schemaVersion": 1,
+  "packageVersion": "0.1.0",
+  "rulesReviewedAt": "2026-10-05",
+  "targets": {
+    "apple-iphone-69": {
+      "name": "App Store Connect · iPhone 6.9-inch",
+      "shortName": "iPhone 6.9-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact current 6.9-inch iPhone size.",
+      "acceptedSizes": [
+        "1260x2736",
+        "2736x1260",
+        "1290x2796",
+        "2796x1290",
+        "1320x2868",
+        "2868x1320"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1260x2736",
+          "2736x1260",
+          "1290x2796",
+          "2796x1290",
+          "1320x2868",
+          "2868x1320"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-iphone-65": {
+      "name": "App Store Connect · iPhone 6.5-inch",
+      "shortName": "iPhone 6.5-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 6.5-inch iPhone size.",
+      "acceptedSizes": [
+        "1284x2778",
+        "2778x1284",
+        "1242x2688",
+        "2688x1242"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1284x2778",
+          "2778x1284",
+          "1242x2688",
+          "2688x1242"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-iphone-63": {
+      "name": "App Store Connect · iPhone 6.3-inch",
+      "shortName": "iPhone 6.3-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 6.3-inch iPhone size.",
+      "acceptedSizes": [
+        "1179x2556",
+        "2556x1179",
+        "1206x2622",
+        "2622x1206"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1179x2556",
+          "2556x1179",
+          "1206x2622",
+          "2622x1206"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-iphone-61": {
+      "name": "App Store Connect · iPhone 6.1-inch",
+      "shortName": "iPhone 6.1-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 6.1-inch iPhone size.",
+      "acceptedSizes": [
+        "1170x2532",
+        "2532x1170",
+        "1125x2436",
+        "2436x1125",
+        "1080x2340",
+        "2340x1080"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1170x2532",
+          "2532x1170",
+          "1125x2436",
+          "2436x1125",
+          "1080x2340",
+          "2340x1080"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-iphone-55": {
+      "name": "App Store Connect · iPhone 5.5-inch",
+      "shortName": "iPhone 5.5-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact 5.5-inch iPhone size.",
+      "acceptedSizes": [
+        "1242x2208",
+        "2208x1242"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1242x2208",
+          "2208x1242"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-iphone-47": {
+      "name": "App Store Connect · iPhone 4.7-inch",
+      "shortName": "iPhone 4.7-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact 4.7-inch iPhone size.",
+      "acceptedSizes": [
+        "750x1334",
+        "1334x750"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "750x1334",
+          "1334x750"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-iphone-4": {
+      "name": "App Store Connect · iPhone 4-inch",
+      "shortName": "iPhone 4-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 4-inch iPhone size with or without the status bar.",
+      "acceptedSizes": [
+        "640x1096",
+        "640x1136",
+        "1136x600",
+        "1136x640"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "640x1096",
+          "640x1136",
+          "1136x600",
+          "1136x640"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-iphone-35": {
+      "name": "App Store Connect · iPhone 3.5-inch",
+      "shortName": "iPhone 3.5-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 3.5-inch iPhone size with or without the status bar.",
+      "acceptedSizes": [
+        "640x920",
+        "640x960",
+        "960x600",
+        "960x640"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "640x920",
+          "640x960",
+          "960x600",
+          "960x640"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-ipad-13": {
+      "name": "App Store Connect · iPad 13-inch",
+      "shortName": "iPad 13-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact current 13-inch iPad size.",
+      "acceptedSizes": [
+        "2064x2752",
+        "2752x2064",
+        "2048x2732",
+        "2732x2048"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "2064x2752",
+          "2752x2064",
+          "2048x2732",
+          "2732x2048"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-ipad-129": {
+      "name": "App Store Connect · iPad 12.9-inch",
+      "shortName": "iPad 12.9-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact 12.9-inch iPad size.",
+      "acceptedSizes": [
+        "2048x2732",
+        "2732x2048"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "2048x2732",
+          "2732x2048"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-ipad-11": {
+      "name": "App Store Connect · iPad 11-inch",
+      "shortName": "iPad 11-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 11-inch iPad size.",
+      "acceptedSizes": [
+        "1488x2266",
+        "2266x1488",
+        "1668x2420",
+        "2420x1668",
+        "1668x2388",
+        "2388x1668",
+        "1640x2360",
+        "2360x1640"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1488x2266",
+          "2266x1488",
+          "1668x2420",
+          "2420x1668",
+          "1668x2388",
+          "2388x1668",
+          "1640x2360",
+          "2360x1640"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-ipad-105": {
+      "name": "App Store Connect · iPad 10.5-inch",
+      "shortName": "iPad 10.5-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact 10.5-inch iPad size.",
+      "acceptedSizes": [
+        "1668x2224",
+        "2224x1668"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1668x2224",
+          "2224x1668"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-ipad-97": {
+      "name": "App Store Connect · iPad 9.7-inch",
+      "shortName": "iPad 9.7-inch",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 9.7-inch iPad size with or without the status bar.",
+      "acceptedSizes": [
+        "1536x2008",
+        "1536x2048",
+        "2048x1496",
+        "2048x1536",
+        "768x1004",
+        "768x1024",
+        "1024x748",
+        "1024x768"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1536x2008",
+          "1536x2048",
+          "2048x1496",
+          "2048x1536",
+          "768x1004",
+          "768x1024",
+          "1024x748",
+          "1024x768"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-mac": {
+      "name": "App Store Connect · Mac",
+      "shortName": "Apple · Mac",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-09-06",
+      "summary": "1–10 JPEG or PNG screenshots, no transparency, using one of Apple’s four exact 16:10 Mac sizes.",
+      "acceptedSizes": [
+        "1280x800",
+        "1440x900",
+        "2560x1600",
+        "2880x1800"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1280x800",
+          "1440x900",
+          "2560x1600",
+          "2880x1800"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "google-phone": {
+      "name": "Google Play · Phone",
+      "shortName": "Google Play",
+      "source": "https://support.google.com/googleplay/android-developer/answer/9866151?hl=en",
+      "sourceLabel": "Google Play preview asset guidance",
+      "verifiedAt": "2026-08-11",
+      "summary": "JPEG or 24-bit PNG without alpha, 320–3840 px, with the long edge no more than twice the short edge.",
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 2,
+        "max": 8,
+        "minimumScope": "listing-across-device-types"
+      },
+      "dimensions": {
+        "minimumEdge": 320,
+        "maximumEdge": 3840,
+        "maximumAspectRatio": 2
+      },
+      "maxBytes": null,
+      "png": {
+        "bitDepth": 8,
+        "colorType": 2
+      }
+    },
+    "microsoft-desktop": {
+      "name": "Microsoft Store · Desktop",
+      "shortName": "Microsoft · Desktop",
+      "source": "https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/pwa/screenshots-and-images",
+      "sourceLabel": "Microsoft Store screenshot guidance",
+      "verifiedAt": "2026-08-11",
+      "summary": "1–10 PNG screenshots, at least 1366 × 768 in landscape (or the portrait equivalent), up to 50 MB each.",
+      "formats": [
+        "image/png"
+      ],
+      "alphaAllowed": null,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "minimumLongEdge": 1366,
+        "minimumShortEdge": 768
+      },
+      "maxBytes": 52428800,
+      "png": null
+    }
+  }
+}

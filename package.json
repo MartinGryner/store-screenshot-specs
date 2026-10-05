@@ -1,0 +1,40 @@
+{
+  "name": "@grunersoftware/store-screenshot-specs",
+  "version": "0.1.0",
+  "description": "Versioned screenshot requirements and validation for supported Apple, Google Play and Microsoft Store targets.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./specs.json": "./dist/specs.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "Martin Gr\u00fcner",
+  "engines": {
+    "node": ">=22"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node build-data.mjs",
+    "test": "node --test test/*.test.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinGryner/store-screenshot-specs.git"
+  }
+}
