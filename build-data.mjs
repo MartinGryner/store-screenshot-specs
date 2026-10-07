@@ -8,4 +8,4 @@ const targets = Object.fromEntries(Object.entries(storeTargets).map(([id,t]) => 
   maxBytes: id === 'microsoft-desktop' ? 50*1024*1024 : null,
   png: id === 'google-phone' ? {bitDepth:8,colorType:2} : null,
 }]));
-await writeFile(new URL('./dist/specs.json',import.meta.url), JSON.stringify({schemaVersion:1,packageVersion:'0.1.0',rulesReviewedAt:'2026-10-05',targets},null,2)+'\n');
+await writeFile(new URL('./dist/specs.json',import.meta.url), JSON.stringify({schemaVersion:1,packageVersion:'0.1.0',rulesReviewedAt:'2026-10-07',targets},null,2)+'\n');

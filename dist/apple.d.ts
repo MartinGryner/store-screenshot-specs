@@ -13,12 +13,13 @@ export type AppleScreenshotSlot = {
     fallback: string | null;
     sizes: readonly AppleScreenshotSize[];
     validatorTargetId?: string;
+    formerLabel?: string;
 };
 export declare const appleScreenshotSpecifications: {
     readonly schemaVersion: 1;
-    readonly verifiedAt: "2026-09-06";
+    readonly verifiedAt: "2026-10-07";
     readonly sourceUrl: "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/";
-    readonly uploadGuidanceUrl: "https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots/";
+    readonly uploadGuidanceUrl: "https://developer.apple.com/help/app-store-connect/manage-app-information/manage-your-app-store-assets/";
     readonly fileRules: {
         readonly minimumScreenshots: 1;
         readonly maximumScreenshots: 10;
@@ -37,6 +38,26 @@ export declare const appleScreenshotSpecifications: {
             width: number;
             height: number;
             orientation: "portrait";
+            note: string;
+        } | {
+            width: number;
+            height: number;
+            orientation: "landscape";
+            note: string;
+        })[];
+        formerLabel?: undefined;
+    } | {
+        id: string;
+        platform: "iPhone";
+        display: string;
+        formerLabel: string;
+        requirement: null;
+        fallback: string;
+        validatorTargetId: string;
+        sizes: ({
+            width: number;
+            height: number;
+            orientation: "portrait";
         } | {
             width: number;
             height: number;
@@ -46,6 +67,7 @@ export declare const appleScreenshotSpecifications: {
         id: string;
         platform: "iPhone";
         display: string;
+        formerLabel: string;
         requirement: string;
         fallback: string;
         validatorTargetId: string;
@@ -69,22 +91,6 @@ export declare const appleScreenshotSpecifications: {
             width: number;
             height: number;
             orientation: "portrait";
-        } | {
-            width: number;
-            height: number;
-            orientation: "landscape";
-        })[];
-    } | {
-        id: string;
-        platform: "iPhone";
-        display: string;
-        requirement: null;
-        fallback: string;
-        validatorTargetId: string;
-        sizes: ({
-            width: number;
-            height: number;
-            orientation: "portrait";
             note: string;
         } | {
             width: number;
@@ -92,6 +98,7 @@ export declare const appleScreenshotSpecifications: {
             orientation: "landscape";
             note: string;
         })[];
+        formerLabel?: undefined;
     } | {
         id: string;
         platform: "iPad";
@@ -108,6 +115,7 @@ export declare const appleScreenshotSpecifications: {
             height: number;
             orientation: "landscape";
         })[];
+        formerLabel?: undefined;
     } | {
         id: string;
         platform: "iPad";
@@ -124,6 +132,7 @@ export declare const appleScreenshotSpecifications: {
             height: number;
             orientation: "landscape";
         })[];
+        formerLabel?: undefined;
     } | {
         id: string;
         platform: "iPad";
@@ -142,6 +151,7 @@ export declare const appleScreenshotSpecifications: {
             orientation: "landscape";
             note: string;
         })[];
+        formerLabel?: undefined;
     } | {
         id: string;
         platform: "Mac";
@@ -154,6 +164,7 @@ export declare const appleScreenshotSpecifications: {
             height: number;
             orientation: "landscape";
         }[];
+        formerLabel?: undefined;
     } | {
         id: string;
         platform: "Apple TV";
@@ -166,6 +177,7 @@ export declare const appleScreenshotSpecifications: {
             orientation: "landscape";
         }[];
         validatorTargetId?: undefined;
+        formerLabel?: undefined;
     } | {
         id: string;
         platform: "Apple Vision Pro";
@@ -178,6 +190,7 @@ export declare const appleScreenshotSpecifications: {
             orientation: "landscape";
         }[];
         validatorTargetId?: undefined;
+        formerLabel?: undefined;
     } | {
         id: string;
         platform: "Apple Watch";
@@ -191,6 +204,7 @@ export declare const appleScreenshotSpecifications: {
             note: string;
         }[];
         validatorTargetId?: undefined;
+        formerLabel?: undefined;
     })[];
 };
 export declare function appleScreenshotSizeStrings(slot: AppleScreenshotSlot): string[];
@@ -205,6 +219,26 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         width: number;
         height: number;
         orientation: "portrait";
+        note: string;
+    } | {
+        width: number;
+        height: number;
+        orientation: "landscape";
+        note: string;
+    })[];
+    formerLabel?: undefined;
+} | {
+    id: string;
+    platform: "iPhone";
+    display: string;
+    formerLabel: string;
+    requirement: null;
+    fallback: string;
+    validatorTargetId: string;
+    sizes: ({
+        width: number;
+        height: number;
+        orientation: "portrait";
     } | {
         width: number;
         height: number;
@@ -214,6 +248,7 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
     id: string;
     platform: "iPhone";
     display: string;
+    formerLabel: string;
     requirement: string;
     fallback: string;
     validatorTargetId: string;
@@ -237,22 +272,6 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         width: number;
         height: number;
         orientation: "portrait";
-    } | {
-        width: number;
-        height: number;
-        orientation: "landscape";
-    })[];
-} | {
-    id: string;
-    platform: "iPhone";
-    display: string;
-    requirement: null;
-    fallback: string;
-    validatorTargetId: string;
-    sizes: ({
-        width: number;
-        height: number;
-        orientation: "portrait";
         note: string;
     } | {
         width: number;
@@ -260,6 +279,7 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         orientation: "landscape";
         note: string;
     })[];
+    formerLabel?: undefined;
 } | {
     id: string;
     platform: "iPad";
@@ -276,6 +296,7 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         height: number;
         orientation: "landscape";
     })[];
+    formerLabel?: undefined;
 } | {
     id: string;
     platform: "iPad";
@@ -292,6 +313,7 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         height: number;
         orientation: "landscape";
     })[];
+    formerLabel?: undefined;
 } | {
     id: string;
     platform: "iPad";
@@ -310,6 +332,7 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         orientation: "landscape";
         note: string;
     })[];
+    formerLabel?: undefined;
 } | {
     id: string;
     platform: "Mac";
@@ -322,6 +345,7 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         height: number;
         orientation: "landscape";
     }[];
+    formerLabel?: undefined;
 } | {
     id: string;
     platform: "Apple TV";
@@ -334,6 +358,7 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         orientation: "landscape";
     }[];
     validatorTargetId?: undefined;
+    formerLabel?: undefined;
 } | {
     id: string;
     platform: "Apple Vision Pro";
@@ -346,6 +371,7 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         orientation: "landscape";
     }[];
     validatorTargetId?: undefined;
+    formerLabel?: undefined;
 } | {
     id: string;
     platform: "Apple Watch";
@@ -359,4 +385,5 @@ export declare function getAppleScreenshotSlotByValidatorTarget(targetId: string
         note: string;
     }[];
     validatorTargetId?: undefined;
+    formerLabel?: undefined;
 } | undefined;

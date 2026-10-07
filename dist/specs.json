@@ -1,15 +1,49 @@
 {
   "schemaVersion": 1,
   "packageVersion": "0.1.0",
-  "rulesReviewedAt": "2026-10-05",
+  "rulesReviewedAt": "2026-10-07",
   "targets": {
-    "apple-iphone-69": {
-      "name": "App Store Connect · iPhone 6.9-inch",
-      "shortName": "iPhone 6.9-inch",
+    "apple-iphone-duo": {
+      "name": "App Store Connect · iPhone Duo",
+      "shortName": "iPhone Duo",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
-      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact current 6.9-inch iPhone size.",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact iPhone Duo outer- or inner-display size.",
+      "acceptedSizes": [
+        "1398x2034",
+        "2034x1398",
+        "2007x2853",
+        "2853x2007"
+      ],
+      "formats": [
+        "image/jpeg",
+        "image/png"
+      ],
+      "alphaAllowed": false,
+      "count": {
+        "min": 1,
+        "max": 10,
+        "minimumScope": "set"
+      },
+      "dimensions": {
+        "exact": [
+          "1398x2034",
+          "2034x1398",
+          "2007x2853",
+          "2853x2007"
+        ]
+      },
+      "maxBytes": null,
+      "png": null
+    },
+    "apple-iphone-69": {
+      "name": "App Store Connect · iPhone Dynamic Island, large (6.9-inch)",
+      "shortName": "iPhone Dynamic Island, large (6.9-inch)",
+      "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
+      "sourceLabel": "Apple screenshot specifications",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact current Dynamic Island (large display) size.",
       "acceptedSizes": [
         "1260x2736",
         "2736x1260",
@@ -42,12 +76,12 @@
       "png": null
     },
     "apple-iphone-65": {
-      "name": "App Store Connect · iPhone 6.5-inch",
-      "shortName": "iPhone 6.5-inch",
+      "name": "App Store Connect · iPhone Face ID, large (6.5-inch)",
+      "shortName": "iPhone Face ID, large (6.5-inch)",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
-      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 6.5-inch iPhone size.",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact Face ID (large display) size.",
       "acceptedSizes": [
         "1284x2778",
         "2778x1284",
@@ -76,12 +110,12 @@
       "png": null
     },
     "apple-iphone-63": {
-      "name": "App Store Connect · iPhone 6.3-inch",
-      "shortName": "iPhone 6.3-inch",
+      "name": "App Store Connect · iPhone Dynamic Island, medium (6.3-inch)",
+      "shortName": "iPhone Dynamic Island, medium (6.3-inch)",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
-      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 6.3-inch iPhone size.",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact Dynamic Island (medium display) size.",
       "acceptedSizes": [
         "1179x2556",
         "2556x1179",
@@ -110,12 +144,12 @@
       "png": null
     },
     "apple-iphone-61": {
-      "name": "App Store Connect · iPhone 6.1-inch",
-      "shortName": "iPhone 6.1-inch",
+      "name": "App Store Connect · iPhone Face ID, medium (6.1-inch)",
+      "shortName": "iPhone Face ID, medium (6.1-inch)",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
-      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 6.1-inch iPhone size.",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact Face ID (medium display) size.",
       "acceptedSizes": [
         "1170x2532",
         "2532x1170",
@@ -148,12 +182,12 @@
       "png": null
     },
     "apple-iphone-55": {
-      "name": "App Store Connect · iPhone 5.5-inch",
-      "shortName": "iPhone 5.5-inch",
+      "name": "App Store Connect · iPhone Home Button, large (5.5-inch)",
+      "shortName": "iPhone Home Button, large (5.5-inch)",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
-      "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact 5.5-inch iPhone size.",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact Home Button (large display) size.",
       "acceptedSizes": [
         "1242x2208",
         "2208x1242"
@@ -178,12 +212,12 @@
       "png": null
     },
     "apple-iphone-47": {
-      "name": "App Store Connect · iPhone 4.7-inch",
-      "shortName": "iPhone 4.7-inch",
+      "name": "App Store Connect · iPhone Home Button, medium (4.7-inch)",
+      "shortName": "iPhone Home Button, medium (4.7-inch)",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
-      "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact 4.7-inch iPhone size.",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact Home Button (medium display) size.",
       "acceptedSizes": [
         "750x1334",
         "1334x750"
@@ -208,12 +242,12 @@
       "png": null
     },
     "apple-iphone-4": {
-      "name": "App Store Connect · iPhone 4-inch",
-      "shortName": "iPhone 4-inch",
+      "name": "App Store Connect · iPhone Home Button, 4-inch",
+      "shortName": "iPhone Home Button, 4-inch",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
-      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 4-inch iPhone size with or without the status bar.",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 4-inch Home Button size with or without the status bar.",
       "acceptedSizes": [
         "640x1096",
         "640x1136",
@@ -242,12 +276,12 @@
       "png": null
     },
     "apple-iphone-35": {
-      "name": "App Store Connect · iPhone 3.5-inch",
-      "shortName": "iPhone 3.5-inch",
+      "name": "App Store Connect · iPhone Home Button, 3.5-inch",
+      "shortName": "iPhone Home Button, 3.5-inch",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
-      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 3.5-inch iPhone size with or without the status bar.",
+      "verifiedAt": "2026-10-07",
+      "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 3.5-inch Home Button size with or without the status bar.",
       "acceptedSizes": [
         "640x920",
         "640x960",
@@ -280,7 +314,7 @@
       "shortName": "iPad 13-inch",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
+      "verifiedAt": "2026-10-07",
       "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact current 13-inch iPad size.",
       "acceptedSizes": [
         "2064x2752",
@@ -314,7 +348,7 @@
       "shortName": "iPad 12.9-inch",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
+      "verifiedAt": "2026-10-07",
       "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact 12.9-inch iPad size.",
       "acceptedSizes": [
         "2048x2732",
@@ -344,7 +378,7 @@
       "shortName": "iPad 11-inch",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
+      "verifiedAt": "2026-10-07",
       "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 11-inch iPad size.",
       "acceptedSizes": [
         "1488x2266",
@@ -386,7 +420,7 @@
       "shortName": "iPad 10.5-inch",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
+      "verifiedAt": "2026-10-07",
       "summary": "1–10 JPEG or PNG screenshots without transparency, using the exact 10.5-inch iPad size.",
       "acceptedSizes": [
         "1668x2224",
@@ -416,7 +450,7 @@
       "shortName": "iPad 9.7-inch",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
+      "verifiedAt": "2026-10-07",
       "summary": "1–10 JPEG or PNG screenshots without transparency, using an exact 9.7-inch iPad size with or without the status bar.",
       "acceptedSizes": [
         "1536x2008",
@@ -458,7 +492,7 @@
       "shortName": "Apple · Mac",
       "source": "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
       "sourceLabel": "Apple screenshot specifications",
-      "verifiedAt": "2026-09-06",
+      "verifiedAt": "2026-10-07",
       "summary": "1–10 JPEG or PNG screenshots, no transparency, using one of Apple’s four exact 16:10 Mac sizes.",
       "acceptedSizes": [
         "1280x800",
@@ -492,7 +526,7 @@
       "shortName": "Google Play",
       "source": "https://support.google.com/googleplay/android-developer/answer/9866151?hl=en",
       "sourceLabel": "Google Play preview asset guidance",
-      "verifiedAt": "2026-08-11",
+      "verifiedAt": "2026-10-07",
       "summary": "JPEG or 24-bit PNG without alpha, 320–3840 px, with the long edge no more than twice the short edge.",
       "formats": [
         "image/jpeg",
@@ -520,7 +554,7 @@
       "shortName": "Microsoft · Desktop",
       "source": "https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/pwa/screenshots-and-images",
       "sourceLabel": "Microsoft Store screenshot guidance",
-      "verifiedAt": "2026-08-11",
+      "verifiedAt": "2026-10-07",
       "summary": "1–10 PNG screenshots, at least 1366 × 768 in landscape (or the portrait equivalent), up to 50 MB each.",
       "formats": [
         "image/png"

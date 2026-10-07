@@ -3,9 +3,7 @@
 Versioned requirements and pure validation functions for store screenshot tooling.
 This package has no runtime dependencies and does not read files or make network requests.
 
-Version 0.1.0 is prepared but has not yet been published to npm. Until publication,
-clone this repository and follow the development steps below. The installation
-command below applies after the first npm release.
+Install a pinned release:
 
 ```sh
 npm install @grunersoftware/store-screenshot-specs@0.1.0
@@ -31,7 +29,7 @@ TypeScript declarations are included. The machine-readable data is exported as
 
 | IDs | Checks |
 | --- | --- |
-| `apple-iphone-69`, `-65`, `-63`, `-61`, `-55`, `-47`, `-4`, `-35` (each with the `apple-iphone` prefix) | Exact dimensions, JPEG/PNG, alpha, 1–10 images |
+| `apple-iphone-duo`, `apple-iphone-69`, `-65`, `-63`, `-61`, `-55`, `-47`, `-4`, `-35` (each with the `apple-iphone` prefix) | Exact dimensions, JPEG/PNG, alpha, 1–10 images |
 | `apple-ipad-13`, `apple-ipad-129`, `apple-ipad-11`, `apple-ipad-105`, `apple-ipad-97` | Exact dimensions, JPEG/PNG, alpha, 1–10 images |
 | `apple-mac` | Four exact landscape sizes, JPEG/PNG, alpha, 1–10 images |
 | `google-phone` | Edge/ratio bounds, JPEG or 24-bit PNG, alpha, at most 8 images; fewer than 2 prompts review because the minimum applies across the listing |
@@ -44,7 +42,7 @@ source is not a claim of validation support. Call once for each locale/device se
 The rules were reviewed against [Apple](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/),
 [Google](https://support.google.com/googleplay/android-developer/answer/9866151?hl=en),
 and [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/pwa/screenshots-and-images)
-on October 5, 2026. Each target retains its original data-verification date and source URL;
+for this release. Each target retains its original data-verification date and source URL;
 the JSON also carries this release's review date. Microsoft describes its limit as
 50 MB without specifying a byte convention; this release preserves the browser tool's
 50 × 1024 × 1024 interpretation. Files near that threshold need a store upload check.

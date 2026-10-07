@@ -15,13 +15,14 @@ export type AppleScreenshotSlot = {
   fallback: string | null;
   sizes: readonly AppleScreenshotSize[];
   validatorTargetId?: string;
+  formerLabel?: string;
 };
 
 export const appleScreenshotSpecifications = {
   schemaVersion: 1,
-  verifiedAt: "2026-09-06",
+  verifiedAt: "2026-10-07",
   sourceUrl: "https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/",
-  uploadGuidanceUrl: "https://developer.apple.com/help/app-store-connect/manage-app-information/upload-app-previews-and-screenshots/",
+  uploadGuidanceUrl: "https://developer.apple.com/help/app-store-connect/manage-app-information/manage-your-app-store-assets/",
   fileRules: {
     minimumScreenshots: 1,
     maximumScreenshots: 10,
@@ -31,11 +32,26 @@ export const appleScreenshotSpecifications = {
   },
   slots: [
     {
-      id: "iphone-6-9",
+      id: "iphone-duo",
       platform: "iPhone",
-      display: "6.9-inch display",
+      display: "iPhone Duo",
       requirement: null,
       fallback: null,
+      validatorTargetId: "apple-iphone-duo",
+      sizes: [
+        { width: 1398, height: 2034, orientation: "portrait", note: "outer display" },
+        { width: 2034, height: 1398, orientation: "landscape", note: "outer display" },
+        { width: 2007, height: 2853, orientation: "portrait", note: "inner display" },
+        { width: 2853, height: 2007, orientation: "landscape", note: "inner display" },
+      ],
+    },
+    {
+      id: "iphone-6-9",
+      platform: "iPhone",
+      display: "iPhone with Dynamic Island (large display)",
+      formerLabel: "6.9-inch",
+      requirement: null,
+      fallback: "App Store Connect uses scaled Face ID (large display) screenshots when this slot is omitted.",
       validatorTargetId: "apple-iphone-69",
       sizes: [
         { width: 1260, height: 2736, orientation: "portrait" },
@@ -49,9 +65,10 @@ export const appleScreenshotSpecifications = {
     {
       id: "iphone-6-5",
       platform: "iPhone",
-      display: "6.5-inch display",
-      requirement: "Required for iPhone apps when 6.9-inch screenshots are not provided.",
-      fallback: "App Store Connect uses scaled 6.9-inch screenshots when this slot is omitted.",
+      display: "iPhone with Face ID (large display)",
+      formerLabel: "6.5-inch",
+      requirement: "Apple’s table: required if the app runs on iPhone and Dynamic Island (large display) screenshots are not provided.",
+      fallback: "App Store Connect uses scaled Dynamic Island (large display) screenshots when this slot is omitted.",
       validatorTargetId: "apple-iphone-65",
       sizes: [
         { width: 1284, height: 2778, orientation: "portrait" },
@@ -63,9 +80,10 @@ export const appleScreenshotSpecifications = {
     {
       id: "iphone-6-3",
       platform: "iPhone",
-      display: "6.3-inch display",
-      requirement: null,
-      fallback: "App Store Connect uses scaled 6.5-inch screenshots when this slot is omitted.",
+      display: "iPhone with Dynamic Island (medium display)",
+      formerLabel: "6.3-inch",
+      requirement: "Apple’s required-sizes summary: at least one iPhone screenshot at this size.",
+      fallback: "App Store Connect uses scaled Face ID (large display) screenshots when this slot is omitted.",
       validatorTargetId: "apple-iphone-63",
       sizes: [
         { width: 1179, height: 2556, orientation: "portrait" },
@@ -77,9 +95,10 @@ export const appleScreenshotSpecifications = {
     {
       id: "iphone-6-1",
       platform: "iPhone",
-      display: "6.1-inch display",
+      display: "iPhone with Face ID (medium display)",
+      formerLabel: "6.1-inch",
       requirement: null,
-      fallback: "App Store Connect uses scaled 6.5-inch screenshots when this slot is omitted.",
+      fallback: "App Store Connect uses scaled Dynamic Island (medium display) screenshots when this slot is omitted.",
       validatorTargetId: "apple-iphone-61",
       sizes: [
         { width: 1170, height: 2532, orientation: "portrait" },
@@ -93,9 +112,10 @@ export const appleScreenshotSpecifications = {
     {
       id: "iphone-5-5",
       platform: "iPhone",
-      display: "5.5-inch display",
+      display: "iPhone with Home Button (large display)",
+      formerLabel: "5.5-inch",
       requirement: null,
-      fallback: "App Store Connect uses scaled 6.1-inch screenshots when this slot is omitted.",
+      fallback: "App Store Connect uses scaled Face ID (medium display) screenshots when this slot is omitted.",
       validatorTargetId: "apple-iphone-55",
       sizes: [
         { width: 1242, height: 2208, orientation: "portrait" },
@@ -105,9 +125,10 @@ export const appleScreenshotSpecifications = {
     {
       id: "iphone-4-7",
       platform: "iPhone",
-      display: "4.7-inch display",
+      display: "iPhone with Home Button (medium display)",
+      formerLabel: "4.7-inch",
       requirement: null,
-      fallback: "App Store Connect uses scaled 5.5-inch screenshots when this slot is omitted.",
+      fallback: "App Store Connect uses scaled Home Button (large display) screenshots when this slot is omitted.",
       validatorTargetId: "apple-iphone-47",
       sizes: [
         { width: 750, height: 1334, orientation: "portrait" },
@@ -117,9 +138,9 @@ export const appleScreenshotSpecifications = {
     {
       id: "iphone-4",
       platform: "iPhone",
-      display: "4-inch display",
+      display: "iPhone with Home Button (4-inch display)",
       requirement: null,
-      fallback: "App Store Connect uses scaled 4.7-inch screenshots when this slot is omitted.",
+      fallback: "App Store Connect uses scaled Home Button (medium display) screenshots when this slot is omitted.",
       validatorTargetId: "apple-iphone-4",
       sizes: [
         { width: 640, height: 1096, orientation: "portrait", note: "without status bar" },
@@ -131,9 +152,9 @@ export const appleScreenshotSpecifications = {
     {
       id: "iphone-3-5",
       platform: "iPhone",
-      display: "3.5-inch display",
+      display: "iPhone with Home Button (3.5-inch display)",
       requirement: null,
-      fallback: "App Store Connect uses scaled 4-inch screenshots when this slot is omitted.",
+      fallback: "App Store Connect uses scaled Home Button (4-inch display) screenshots when this slot is omitted.",
       validatorTargetId: "apple-iphone-35",
       sizes: [
         { width: 640, height: 920, orientation: "portrait", note: "without status bar" },
@@ -220,7 +241,7 @@ export const appleScreenshotSpecifications = {
       id: "mac",
       platform: "Mac",
       display: "Mac",
-      requirement: "Required for Mac apps.",
+      requirement: "Required for Mac apps. Use a 16:10 aspect ratio.",
       fallback: null,
       validatorTargetId: "apple-mac",
       sizes: [
@@ -256,9 +277,9 @@ export const appleScreenshotSpecifications = {
       requirement: "Required for Apple Watch apps. Use the same size across every localization.",
       fallback: null,
       sizes: [
-        { width: 422, height: 514, orientation: "portrait", note: "Ultra 3" },
+        { width: 422, height: 514, orientation: "portrait", note: "Ultra 4 and Ultra 3" },
         { width: 410, height: 502, orientation: "portrait", note: "Ultra 2 and Ultra" },
-        { width: 416, height: 496, orientation: "portrait", note: "Series 11 and Series 10" },
+        { width: 416, height: 496, orientation: "portrait", note: "Series 12, Series 11, and Series 10" },
         { width: 396, height: 484, orientation: "portrait", note: "Series 9, Series 8, and Series 7" },
         { width: 368, height: 448, orientation: "portrait", note: "Series 6, Series 5, Series 4, SE 3, SE 2, and SE" },
         { width: 312, height: 390, orientation: "portrait", note: "Series 3, Series 2, and Series 1" },
